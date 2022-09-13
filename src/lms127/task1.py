@@ -2,4 +2,14 @@ from to_do import TODO
 
 
 def task1():
-    TODO("Erase this line and write your solution")
+    Country = "Sweden"
+    Capital = "stockholm"
+    Currency = "SEK"
+
+    print (f"Country: {Country}")
+    print (f"Capiral: {Capital}")
+    print (f"Currency: {Currency}")
+
+
+if __name__ == "__main__":
+    task1()
