@@ -2,24 +2,41 @@ from to_do import TODO
 
 
 def task10_1(assessments):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+
+    result = len(assessments)
+    print(result)
+    return
+if __name__ == "__main__":
+    task10_1("LMHHF")
+
 
 
 def task10_2(assessments):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = assessments[3]
+    print(result)
+    return
+if __name__ == "__main__":
+    task10_2("LMFHMF")
+
+
 
 
 def task10_3(assessments):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = assessments[2]
+    print(result)
+    return
+
+if __name__ == "__main__":
+    task10_3("LMFHM")
+
 
 
 def task10_4(assessments):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = assessments[0:3]
+    print(result)
+    return
+
+
+if __name__ == "__main__":
+    task10_4("LMFHM")
+
