@@ -2,6 +2,16 @@ from to_do import TODO
 
 
 def task8(number):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+
+
+    numStr = str(number)
+    list_of_num = list(map(int, numStr.strip()))
+    result = sum(list_of_num)
+
+    print(result)
+    return(result)
+
+
+
+if __name__ == "__main__":
+    task8(213)
