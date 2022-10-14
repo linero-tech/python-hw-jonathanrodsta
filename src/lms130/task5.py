@@ -2,6 +2,15 @@ from to_do import TODO
 
 
 def task5(items):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = []
+    counter = 0
+    for i in items:
+        result.append(i * counter)
+        counter = counter + 1
+    print(result)
+    return result
+
+
+
+if __name__ == "__main__":
+    task5([1,5,11])
