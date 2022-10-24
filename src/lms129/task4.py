@@ -2,16 +2,16 @@ from to_do import TODO
 
 
 def task4():
-
-    result = 9
-
-    for result in range (result, 1000):
-         if (result % 9) == 0 :
-             print(result)
-
-    return (result)
-
-
+    number = 9
+    result = 0
+    sum = 0
+    for number in range(number, 1000):
+        if (number % 9 == 0):
+            sum = sum + number
+            result = sum
+            
+    print(result)
+    return result
 
 
 
