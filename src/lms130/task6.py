@@ -2,14 +2,13 @@ from to_do import TODO
 
 
 def task6(sentence):
-    temp = []
     result = ""
-    for index in range(len(sentence)):
+
+    for index, letter in enumerate(sentence):
         if index % 2 == 0:
-            temp.append(sentence[index].upper())
+            result += letter.upper()
         else:
-            temp.append(sentence[index])
-    result = ' '.join(temp)
+            result += letter
     print(result)
     return result
 
