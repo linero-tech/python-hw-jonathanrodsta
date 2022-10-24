@@ -6,9 +6,9 @@ def task2():
     country = "Sweden"
     month = "march"
 
-    print (f"Hello {name},you are from {country} and you were born in {month}")
+    print (f"Hello {name}, you are from {country} and you were born in {month}")
 
-    return
+    return 
 
 if __name__ == "__main__":
     task2()
