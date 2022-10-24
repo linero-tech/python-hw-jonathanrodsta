@@ -16,7 +16,8 @@ def task7(items):
     else:
         result = 0
         print(result)
+    return result
 
 
 if __name__ == "__main__":
-    task7([])
+    task7([10,5,11])
