@@ -6,9 +6,10 @@ def task1():
     Capital = "stockholm"
     Currency = "SEK"
 
-    print (f"Country: {Country}")
-    print (f"Capiral: {Capital}")
-    print (f"Currency: {Currency}")
+    print(f"Country: {Country}")
+    print(f"Capital: {Capital}")
+    print(f"Currency: {Currency}")
+    return
 
 
 if __name__ == "__main__":

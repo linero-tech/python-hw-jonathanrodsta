@@ -2,10 +2,12 @@ from to_do import TODO
 
 
 def task9(sentence, character):
-    result = sentence.__contains__(character)
+    lower_sentence = sentence.lower()
+    lower_character = character.lower()
+    result = lower_character in lower_sentence
     print(result)
-    return
+    return result
 
 
 if __name__ == "__main__":
-    task9("I code in KOTLIN", "i")
+    task9("I code In KOTLIN", "i")
