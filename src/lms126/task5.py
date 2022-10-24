@@ -2,7 +2,7 @@ from to_do import TODO
 
 
 def task5():
-    TODO()
+    pass
     # input number x 1 to 8
     # if x = 1 print Monday
     # if x = 2 print Tuesday

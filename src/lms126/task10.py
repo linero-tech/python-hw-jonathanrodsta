@@ -2,7 +2,7 @@ from to_do import TODO
 
 
 def task10():
-    TODO()
+    pass
     # input email
     # if email exists deny
     # else accept
@@ -12,3 +12,4 @@ def task10():
     # if password more than six characters long accept
     # else deny
     # if accept send verification mail to the specified mail
+

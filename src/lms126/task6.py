@@ -2,7 +2,7 @@ from to_do import TODO
 
 
 def task6():
-    TODO()
+    pass
     # Start counting number x from 1 to 100, inclusive
     # if x is divisible by 5 print x
     # Example

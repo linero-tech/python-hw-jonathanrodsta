@@ -2,7 +2,7 @@ from to_do import TODO
 
 
 def task8():
-    TODO()
+    pass
     # Use modulo operation to see if x is divisible by a certain number
     # If x modulo 3 equals 0 print Foo
     # If x modulo 5 equals 0 print bar
