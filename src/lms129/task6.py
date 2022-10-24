@@ -10,11 +10,11 @@ def task6(number):
         a = result % 10
         rev = rev * 10 + a
         result = result // 10
-        print(rev)
+    print(rev)
 
-    return (result)
+    return result
 
 
 
 if __name__ == "__main__":
-    task6(678)
+    task6(284)
