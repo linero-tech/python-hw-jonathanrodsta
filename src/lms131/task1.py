@@ -2,6 +2,16 @@ from to_do import TODO
 
 
 def task1():
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = dict()
+
+    for number in range(10, 21):
+        if number % 2 != 0:
+            result[number] = number * 2
+
+    return result
+
+
+
+
+if __name__ == "__main__":
+    print(task1())
