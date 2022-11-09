@@ -1,7 +1,12 @@
-from to_do import TODO
-
-
 def task10(mapa):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = dict()
+
+    for key, value in mapa.items():
+        result[value] = key
+
+    return result
+
+
+if __name__ == "__main__":
+    print(task10({1: "A", 2: "B", 3: "C"}))
+
