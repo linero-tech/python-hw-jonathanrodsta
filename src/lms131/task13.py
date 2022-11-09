@@ -2,6 +2,16 @@ from to_do import TODO
 
 
 def task13(sentence):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    sentence = sentence.lower()
+    words = sentence.split(" ")
+    dict = {}
+
+    for word in words:
+        dict[word] = words.count(word)
+    result = max(dict, key=dict.get)
+    print(result)
+    return result
+
+
+if __name__ == "__main__":
+    task13("this This THIS is still the very very same")
