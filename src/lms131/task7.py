@@ -2,6 +2,11 @@ from to_do import TODO
 
 
 def task7(words):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = dict(zip(range(len(words)), words))
+
+    print(result)
+    return result
+
+
+if __name__ == "__main__":
+    task7(["I", "love", "Kotlin"])
