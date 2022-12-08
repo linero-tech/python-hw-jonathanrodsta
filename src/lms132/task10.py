@@ -2,6 +2,17 @@ from to_do import TODO
 
 
 def task10(items):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = None
+
+    for index, element in enumerate(items):
+        if element.lower() == "nemo":
+            result = index
+    print(result)
+    return result
+
+
+
+
+
+if __name__ == "__main__":
+    task10(["I", "cannot","Nemo", "find", "him"])
