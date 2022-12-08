@@ -2,13 +2,30 @@ from to_do import TODO
 
 
 def task13(sentence):
-    sentence = sentence.lower()
+
+    word_count = {}
+
     words = sentence.split(" ")
-    dict = {}
 
     for word in words:
-        dict[word] = words.count(word)
-    result = max(dict, key=dict.get)
+
+        word = word.replace(",", "").replace(";", "").replace(".", "").replace(":", "")
+
+        word = word.lower()
+
+        if word in word_count:
+
+            word_count[word] += 1
+        else:
+
+            word_count[word] = 1
+
+    result = words[0]
+
+    for word, count in word_count.items():
+        if count > word_count[result]:
+            result = word
+
     print(result)
     return result
 
