@@ -9,6 +9,7 @@ def task13(sentence):
 
     for word in words:
         word = word.replace(",", "").replace(";", "").replace(".", "").replace(":", "")
+        word = word.lower()
         dict[word] = words.count(word)
     result = max(dict, key=dict.get)
     print(result)
