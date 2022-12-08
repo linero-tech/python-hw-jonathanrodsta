@@ -2,6 +2,18 @@ from to_do import TODO
 
 
 def task9(identification):
-    return TODO(
-        "Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword"
-    )
+    result = False
+
+    if identification is not None:
+        year = int(identification[0:4])
+        month = int(identification[4:6])
+        day = int(identification[6:8])
+
+        if year >= 1947 and (1 <= month <= 12) and (1 <= day <= 31) and len(identification):
+            result = True
+    print(result)
+    return result
+
+
+if __name__ == "__main__":
+    task9("19921117-9078")
