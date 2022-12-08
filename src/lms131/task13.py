@@ -6,7 +6,6 @@ def task13(sentence):
     words = sentence.split(" ")
     dict = {}
 
-
     for word in words:
         word = word.replace(",", "").replace(";", "").replace(".", "").replace(":", "")
         word = word.lower()
@@ -14,8 +13,6 @@ def task13(sentence):
     result = max(dict, key=dict.get)
     print(result)
     return result
-
-
 
 
 if __name__ == "__main__":
