@@ -2,15 +2,20 @@ from to_do import TODO
 
 
 def task9(identification):
-    result = False
-
-    if identification is not None:
-        year = int(identification[0:4])
-        month = int(identification[4:6])
-        day = int(identification[6:8])
-
-        if year >= 1947 and (1 <= month <= 12) and (1 <= day <= 31) and len(identification) == 13:
-            result = True
+    if identification is None:
+        result = False
+    elif len(identification) != 13:
+        result = False
+    else:
+        year = identification[0:4]
+        if not year.isdigit() or identification[4] != '-' or not identification[5:8].isdigit():
+            result = False
+        else:
+            year = int(year)
+            if year < 1947:
+                result = False
+            else:
+                result = True
     return result
 
 
@@ -18,3 +23,4 @@ if __name__ == "__main__":
     print(task9("19921117-9078"))
     print(task9(None))
     print(task9("19470110-1739"))
+    print(task9("19923131-1090"))
