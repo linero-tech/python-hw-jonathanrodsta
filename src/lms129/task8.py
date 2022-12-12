@@ -3,15 +3,15 @@ from to_do import TODO
 
 def task8(number):
 
+    result = 0
 
-    numStr = str(number)
-    list_of_num = list(map(int, numStr.strip()))
-    result = sum(list_of_num)
+    for i in str(number):
+        result += int(i)
 
     print(result)
-    return(result)
+    return result
 
 
 
 if __name__ == "__main__":
-    task8(213)
+    task8(123)

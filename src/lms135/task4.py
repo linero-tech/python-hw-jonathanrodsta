@@ -3,25 +3,27 @@ from to_do import TODO
 
 class Hero:
     def __init__(self):
-        self._health = 10
-        self._level = 0
+        self.__health = 10
+        self.__level = 0
 
     @property
     def health(self):
-        return self._health
+        return self.__health
 
     @property
     def level(self):
-        return self._level
+        return self.__level
 
     def sick(self):
-        self._health -= 1
+        self.__health -= 1
+
 
     def heal(self):
-        self._health += 1
+        self.__health += 1
+
 
     def attack(self):
-        self._level += 1
+        self.__level += 1
 if __name__ == "__main__":
 
     hero = Hero()

@@ -9,7 +9,7 @@ def task4():
         if (number % 9 == 0):
             sum = sum + number
             result = sum
-            
+
     print(result)
     return result
 

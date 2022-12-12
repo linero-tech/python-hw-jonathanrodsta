@@ -3,7 +3,7 @@ from to_do import TODO
 
 def task6(base1, base2, height):
 
-    result = (base1 + base2) * height/2
+    result = ((base1 + base2)/2) * height
     print(result)
     return result
 

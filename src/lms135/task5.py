@@ -15,7 +15,7 @@ class Circle:
 
 if __name__ == "__main__":
     # Create a new Circle object with radius 5
-    circle = Circle(5)
+    circle = Circle(1)
 
     # Calculate the area of the circle
     print(circle.area())  # 78.53981633974483

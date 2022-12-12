@@ -5,8 +5,8 @@ import string as STR
 
 def counter(sting):
     result = False
-    position_total = 1
-    alphabet_dict = {letter: index for index, letter in enumerate(list(STR.ascii_lowercase))}
+    position_total = 0
+    alphabet_dict = {letter: index + 1 for index, letter in enumerate(list(STR.ascii_lowercase))}
 
     if sting is not None:
         for character in sting.lower().replace(" ",""):

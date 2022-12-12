@@ -1,23 +1,47 @@
 from to_do import TODO
 
+
 class Student:
-    def __init__(self, grades: [float]):
-        self.grades = grades
+    def __init__(self, grades: list):
+        self._grades = grades
 
     @property
-    def grades(self):
-        return self.__grades
+    def grades(self) -> list:
+        return self._grades
 
-    def gpa(self):
-        return sum(self.__grades) / len(self.__grades)
+    def gpa(self) -> float:
+        return sum(self._grades) / len(self._grades)
 
     def bonus(self):
-        self.__grades = [grade + 1 for grade in self.__grades]
+        self._grades = [grade + 1 for grade in self._grades]
 
-    def lowest(self):
-        return min(self.__grades)
+    def lowest(self) -> float:
+        return min(self._grades)
 
-    def highest(self):
-        return max(self.__grades)
+    def highest(self) -> float:
+        return max(self._grades)
+
+
 if __name__ == "__main__":
-    print()
+    # Create a student with grades [9, 7, 8, 10, 6]
+    student = Student([1, 10, 5])
+
+    # Calculate the GPA
+    gpa = student.gpa()
+    print(gpa)
+
+    # Give the student a bonus by adding 1 point to each grade
+    student.bonus()
+
+    # Calculate the GPA again
+    gpa = student.gpa()
+    print(gpa)
+
+    # Get the lowest grade
+    lowest = student.lowest()
+    print(lowest)
+
+    # Get the highest grade
+    highest = student.highest()
+    print(highest)
+
