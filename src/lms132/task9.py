@@ -4,15 +4,24 @@ from to_do import TODO
 def task9(identification):
     result = False
 
-    if identification is not None:
-        year = int(identification[0:4])
-        month = int(identification[4:6])
-        day = int(identification[6:8])
+    if identification is None or len(identification) != 13:
+        result = False
+    else:
+        try:
+            year = int(identification[0:4])
+            month = int(identification[4:6])
+            day = int(identification[6:8])
 
-        if year >= 1947 and (1 <= month <= 12) and (1 <= day <= 31) and len(identification):
-            result = True
+            int(identification)[9:13]
 
+            if year >= 1947 and (1 <= month <= 12) and (1 <= day <= 31):
+                result = True
+        except ValueError as ve:
+            result = False
     return result
+
+
+
 
 
 if __name__ == "__main__":
