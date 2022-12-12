@@ -16,4 +16,4 @@ def task3(sentence):
 
 
 if __name__ == "__main__":
-    print(task3("I live in SwEdEn"))
+    print(task3("I live in SwEdEN"))
