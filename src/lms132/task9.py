@@ -11,9 +11,10 @@ def task9(identification):
 
         if year >= 1947 and (1 <= month <= 12) and (1 <= day <= 31) and len(identification):
             result = True
-    print(result)
+
     return result
 
 
 if __name__ == "__main__":
-    task9("19921117-9078")
+    print(task9("19921117-9078"))
+    print(task9(None))
