@@ -2,12 +2,19 @@ from to_do import TODO
 
 
 def task2(items):
-    result = items.count(None)
-    if result == "":
-        result = 0
-        print(result)
+    # Initialize the counter variable to 0
+    result = 0
 
+    # Iterate over the items list
+    for item in items:
+        # Check if the current element is null
+        if item == None:
+            # Increment the counter variable
+            result += 1
+
+    # Print the result
     print(result)
+
     return result
 
 
