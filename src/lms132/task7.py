@@ -2,14 +2,15 @@ from to_do import TODO
 
 
 def task7(sentence):
-    result = {}
-    t = 0
-    for i in sentence:
-        if (i.isalpha()):
-            t += 1
-    result["letters"] = t
-    result["digits"] = len(sentence) - t
+    result = {"letters": 0, "digits": 0}
+    for char in sentence:
+        if char.isalpha():
+            result["letters"] += 1
+        elif char.isdigit():
+            result["digits"] += 1
+
     print(result)
+
     return result
 
 
