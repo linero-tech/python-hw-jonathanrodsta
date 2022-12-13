@@ -2,32 +2,27 @@ from to_do import TODO
 
 
 def task8(grades):
-    grades = [
-        {"Ana": [4.0, 4.5, 5.0]},
-        {"John": [5.0, 5.0, 3.0]},
-        {"Lise": [5.0, 5.0, 5.0]},
-    ]
-
-    highest_average = 0
     result = ""
+    highest_average = 0
 
-    for student_grades in grades:
-        for student, grades in student_grades.items():
+    for student, grades in grades.items():
+        # Calculate the average grade for the current student
+        average_grade = 0
+        for grade in grades:
+            average_grade += grade
+        average_grade /= len(grades)
 
-            total = 0
-            for grade in grades:
-                total += grade
-            average = total / len(grades)
+        # Update the result if the current student has a higher average grade
+        if average_grade > highest_average:
+            result = student
+            highest_average = average_grade
 
-
-            if average > highest_average:
-                highest_average = average
-                result = student
+    print(result)
 
     return result
 
 if __name__ == "__main__":
-    print(task8(" "))
+    task8()
 
 
 
