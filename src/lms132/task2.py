@@ -8,8 +8,10 @@ def task2(items):
         if item is None:
             result += 1
 
+
+
     return result
 
 
 if __name__ == "__main__":
-    print(task2([1,None,2,None,3]))
+    print(task2([1, None, 2, None, 3]))
