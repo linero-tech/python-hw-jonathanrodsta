@@ -8,6 +8,10 @@ def task9(grades):
     # Create a variable to store the sum of all the grades
     total_sum = 0
 
+    # Check if the grades dictionary is empty
+    if not grades:
+        return 0.0
+
     # Loop through each student's grades
     for student, grades in grades.items():
         # Add the number of grades for this student to the total
@@ -20,8 +24,6 @@ def task9(grades):
 
     # Calculate the average grade
     result = total_sum / total_grades
-
-    # Print the result
     print(result)
     return result
 
