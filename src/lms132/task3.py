@@ -2,8 +2,8 @@ from to_do import TODO
 
 
 def task3(sentence):
-    # Check if sentence is not null
-    if sentence is not None:
+    # Check if sentence is not empty
+    if sentence:
         # Initialize an empty string to store the modified sentence
         modified_sentence = ""
 
@@ -20,9 +20,9 @@ def task3(sentence):
         # Return the modified sentence
         return modified_sentence
     else:
-        # If the sentence is null, return an asterisk (*)
+        # If the sentence is empty, return an asterisk (*)
         return "*"
 
 
 if __name__ == "__main__":
-    print(task3(None))
+    print(task3("I live in SwEdEn"))
