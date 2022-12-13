@@ -2,31 +2,27 @@ from to_do import TODO
 
 
 def task9(grades):
-    # grades is a list of dictionaries, where each dictionary has a student name and a list of their grades
-
-    # Initialize total_grades to 0
+    # Create a variable to store the total number of grades
     total_grades = 0
 
-    # Iterate over the list of students
-    for student in grades:
-        # Get the student name and their grades
-        name = student["name"]
-        student_grades = student["grades"]
+    # Create a variable to store the sum of all the grades
+    total_sum = 0
 
-        # Calculate the total grade for the current student
-        total_grade = 0
-        for grade in student_grades:
-            total_grade += grade
+    # Loop through each student's grades
+    for student, grades in grades.items():
+        # Add the number of grades for this student to the total
+        total_grades += len(grades)
 
-        # Add the total grade for the current student to the total_grades variable
-        total_grades += total_grade
+        # Loop through each grade for this student
+        for grade in grades:
+            # Add the grade to the total sum
+            total_sum += grade
 
-    # Calculate the average grade of the class
-    result = total_grades / len(grades)
+    # Calculate the average grade
+    result = total_sum / total_grades
 
+    # Print the result
     print(result)
-
-    return result
 
 
 if __name__ == "__main__":
