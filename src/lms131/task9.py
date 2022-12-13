@@ -23,6 +23,8 @@ def task9(grades):
 
     # Print the result
     print(result)
+
+
     return result
 
 
