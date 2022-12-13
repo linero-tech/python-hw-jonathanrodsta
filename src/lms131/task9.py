@@ -23,6 +23,7 @@ def task9(grades):
 
     # Print the result
     print(result)
+    return result
 
 
 if __name__ == "__main__":
